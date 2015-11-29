@@ -11,7 +11,14 @@
 >>> d1.carbon = 10
 Plant1 has 10 carbon
 Plant1 has 10 length
+Plant1 has 3 photo
 
 >>> d1.length = 25
 Plant1 has 10 carbon
 Plant1 has 25 length
+Plant1 has 3 photo
+
+>>> d1.photo = 10
+Plant1 has 10 carbon
+Plant1 has 25 length
+Plant1 has 10 photo
