@@ -1,0 +1,17 @@
+>>> from plants import Plant
+>>> from plants import Carbon
+>>> from plants import CarbView
+
+>>> p1 = Plant()
+>>> d1 = Carbon('Plant1')
+
+>>> c1 = CarbView()
+>>> d1.attach(c1)
+
+>>> d1.carbon = 10
+Plant1 has 10 carbon
+Plant1 has 10 length
+
+>>> d1.length = 25
+Plant1 has 10 carbon
+Plant1 has 25 length
