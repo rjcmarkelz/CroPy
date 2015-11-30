@@ -21,11 +21,20 @@
 >>> l1.respiration()
 5.0
 
->>> l1.shape = [10, 2, 3]
-
 >>> l1.shape
 10
 
+>>> l1.space()
+Space
+
+>>> l1.c_demand()
+C demand
+
+>>> l1.p_demand()
+P demand
+
+>>> l1.n_demand()
+N demand
 
 # >>> s1 = Stem()
 # >>> s2 = Stem()
