@@ -12,13 +12,19 @@
 Plant1 has 10 carbon
 Plant1 has 10 length
 Plant1 has 3 photo
+30
 
 >>> d1.length = 25
 Plant1 has 10 carbon
 Plant1 has 25 length
 Plant1 has 3 photo
+75
 
 >>> d1.photo = 10
 Plant1 has 10 carbon
 Plant1 has 25 length
 Plant1 has 10 photo
+250
+
+>>> c2 = CarbView()
+>>> d1.attach(c2)

@@ -20,7 +20,7 @@ class Carbon(Plant):
         self.name = name
         self._carbon = 10
         self._length = 10
-        self.photo = 3
+        self._photo = 3
 
     @property
     def carbon(self):
@@ -50,8 +50,13 @@ class Carbon(Plant):
         self.notify()
 
 class CarbView:
+    def __init__(self, name=''):
+        self.name = name
 
     def update(self, plant):
         print('%s has %d carbon' % (plant.name, plant.carbon))
         print('%s has %d length' % (plant.name, plant.length))
         print('%s has %d photo' % (plant.name, plant.photo))
+        print(plant.length*plant.photo)
+
+        
