@@ -13,7 +13,7 @@ class Plant(object):
                 observer.update(self)
 
 
-class Carbon(Plant):
+class Organ(Plant):
 
     def __init__(self, name=''):
         Plant.__init__(self)

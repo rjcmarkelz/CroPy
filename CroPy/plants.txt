@@ -1,29 +1,29 @@
 >>> from plants import Plant
->>> from plants import Carbon
+>>> from plants import Organ
 >>> from plants import CarbView
 
 >>> p1 = Plant()
->>> d1 = Carbon('Plant1')
+>>> d1 = Organ('Leaf1')
 
 >>> c1 = CarbView()
 >>> d1.attach(c1)
 
 >>> d1.carbon = 10
-Plant1 has 10 carbon
-Plant1 has 10 length
-Plant1 has 3 photo
+Leaf1 has 10 carbon
+Leaf1 has 10 length
+Leaf1 has 3 photo
 30
 
 >>> d1.length = 25
-Plant1 has 10 carbon
-Plant1 has 25 length
-Plant1 has 3 photo
+Leaf1 has 10 carbon
+Leaf1 has 25 length
+Leaf1 has 3 photo
 75
 
 >>> d1.photo = 10
-Plant1 has 10 carbon
-Plant1 has 25 length
-Plant1 has 10 photo
+Leaf1 has 10 carbon
+Leaf1 has 25 length
+Leaf1 has 10 photo
 250
 
 >>> c2 = CarbView()
