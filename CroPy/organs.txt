@@ -1,0 +1,41 @@
+>>> from organs import Organ
+>>> from organs import Leaf
+
+>>> o1 = Organ('Organ1')
+
+>>> l1 = Leaf('Leaf1')
+>>> l1.class_counter
+1
+
+>>> l2 = Leaf()
+>>> l2.class_counter
+2
+
+>>> l3 = Leaf()
+>>> l3.class_counter
+3
+
+>>> l1.photosynthesis()
+10
+
+>>> l1.respiration()
+5.0
+
+>>> l1.shape = [10, 2, 3]
+
+>>> l1.shape
+10
+
+
+# >>> s1 = Stem()
+# >>> s2 = Stem()
+# >>> s3 = Stem()
+
+# >>> p1 = Petiole()
+# >>> p2 = Petiole()
+# >>> p3 = Petiole()
+# >>> s1.photosynthesis
+# >>> p1.photosynthesis
+# >>> s1.respiration
+# >>> p1.respiration
+
