@@ -1,3 +1,4 @@
+
 class Organ(object):
     '''
     This class makes an organ with X, Y, Z coordinates in a 3D space,
@@ -5,15 +6,14 @@ class Organ(object):
     developmental stage of the organ.
     '''
 
-    def __init__(self, name):
+    def __init__(self, name, X=0, Y=0, Z=0):
         self.name = name
-        # self.size = 1
-        # self.xcoord = 0
-        # self.ycoord = 0
-        # self.zcoord = 0
+        self.X = X
+        self.Y = Y
+        self.Z = Z
 
-    def space(self):
-        print("Space")
+    def get_coord(self):
+        return [self.X, self.Y, self.Y]
 
     def c_demand(self):
         print("C demand")
@@ -23,6 +23,14 @@ class Organ(object):
 
     def p_demand(self):
         print("P demand")
+
+    def space(self):
+        print("Space")
+
+    
+
+
+
     # size
     # X
     # Y
@@ -34,18 +42,20 @@ class Leaf(Organ):
     and respiration. 
     '''
     class_counter = 0
-    def __init__(self, name='', shape=10, area=1):
-        # super().__init__(self, name)
+    def __init__(self, name='', shape='rect', area=1, photo_dt=10, resp_dt=2):
+        Organ().__init__(self, name, X=0, Y=0, Z=0)
         self.area = area
-        self.rate = 10
+        self.photo_dt = photo_dt
+        self.resp_dt = resp_dt
         self.shape = shape
         self.id = Leaf.class_counter
         Leaf.class_counter += 1
 
     def photosynthesis(self):
-        return (self.area * self.rate)
+        return (self.area * self.photo_dt)
 
     def respiration(self):
-        return (self.area * self.rate) / 2
+        return (self.area * self.resp_dt) / 2
+
 
 
